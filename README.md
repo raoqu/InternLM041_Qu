@@ -3,7 +3,7 @@
 ![icamp4](https://github.com/user-attachments/assets/cf5eca85-bb13-4b96-aa54-b29fa40d36b7)
 
 
-课程文档地址：https://aicarrier.feishu.cn/wiki/QtJnweAW1iFl8LkoMKGcsUS9nld
+课程文档地址：https://github.com/InternLM/Tutorial
 
 
 ## 1. 关卡作业
@@ -12,7 +12,7 @@
 
 ||关卡名称|资料|作业|
 |:-----|:----|:----|:-----|
-|第 1 关| Linux 前置基础 |[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/linux/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/linux)、[视频](https://www.bilibili.com/video/BV13U1VYmEUr)|[作业](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/readme.md)|
+|第 1 关| Linux 前置基础 |[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/linux/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/linux)、[视频](https://www.bilibili.com/video/BV13U1VYmEUr)|[作业](docs/L0/readme.md)|
 |第 2 关|Python 前置基础 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/Python/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/Python)、[视频](https://www.bilibili.com/video/BV1u61jYSExg)||
 |第 3 关|Git 前置基础|[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/git/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/git/)、[视频](https://www.bilibili.com/video/BV15MShYkEgg)| |
 |第 4 关|玩转「HF/魔搭/魔乐」平台|[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/maas/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/maas)、[视频](https://www.bilibili.com/video/BV1XxStYYEH1/)|  |
