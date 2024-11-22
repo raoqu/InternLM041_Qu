@@ -65,16 +65,21 @@ leetcode 提交：
 ![](imgs/intern_api_token.jpg)
 
 3. 修改代码并设置API token环境变量 `export INTERN_API_KEY='...'`
-4. 调试代码
+4. 调试并修正代码
 
-    1）安装openai依赖 `pip install openai`
-    2) 通过调试发现代码执行异常
+    1. 安装openai依赖 `pip install openai`
+    2. 通过调试发现代码执行异常
 
 ![](imgs/python_error.jpg)
 
-    3) 错误原因是LLM返回的结果中包含json之外的内容，因此需要特殊处理
+    3. 错误原因是LLM返回的结果中包含json之外的内容，因此需要特殊处理
     
+    4. 修正代码与输出结果
+
+![](imgs/output.jpg)
+
 5. 修改正确后的代码：
+
 
 ```python
 from openai import OpenAI
