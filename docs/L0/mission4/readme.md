@@ -18,15 +18,12 @@
 
 # 任务2. 模型上传
 
-1. 在inter_cobuild项目实践过程中，`pip install huggingface_hub`
-2. hugingface-cli loign
+## 1. huggingface 上传
 
-![](imgs/image-5.png)
-
-3. 创建 intern_study_L0_4 仓库
+1. 创建 intern_study_L0_4 仓库
 ![](imgs/image-6.png)
 
-4. 克隆到本地，添加此前已下载的config.json，git 提交上传
+2. 克隆到本地，添加此前已下载的config.json，git 提交上传
 ```
 git clone https://huggingface.co/raoqu/intern_study_L0_4
 cp ../InternLM041_Qu/docs/L0/mission4/internlm2_5-7b/config.json .
@@ -37,12 +34,23 @@ git push
 
 ![](imgs/image-7.png)
 
-5. 检查文件上传结果到 [raoqu/intern_study_L0_4](https://huggingface.co/raoqu/intern_study_L0_4/tree/main)
+3. 检查文件上传结果到 [raoqu/intern_study_L0_4](https://huggingface.co/raoqu/intern_study_L0_4/tree/main)
 
 ![](imgs/image-8.png)
 
+## 2. 魔搭上传
+
+1. 根据文档在开发机中创建环境
+![](imgs/image-9.png)
+
 # 任务3. Space上传
 
-1. 进入[Codespace](https://github.com/codespaces)
-2. 安装必要的依赖
-![alt text](imgs/codespace.png)
+1. 在inter_cobuild项目实践过程中，`pip install huggingface_hub`
+2. hugingface-cli loign
+
+![](imgs/image-5.png)
+
+3. 按照文档提示，修改文件并通过git上传
+4. 访问 [Space](https://huggingface.co/spaces/raoqu/intern_cobuild)
+
+![](imgs/image-10.png)

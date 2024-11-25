@@ -15,7 +15,7 @@
 |第 1 关| Linux 前置基础 |[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/linux/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/linux)、[视频](https://www.bilibili.com/video/BV13U1VYmEUr)|[作业](docs/L0/mission1/readme.md)|
 |第 2 关|Python 前置基础 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/Python/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/Python)、[视频](https://www.bilibili.com/video/BV1u61jYSExg)|[作业](docs/L0/mission2/readme.md)|
 |第 3 关|Git 前置基础|[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/git/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/git/)、[视频](https://www.bilibili.com/video/BV15MShYkEgg)|[作业](docs/L0/mission3/readme.md) |
-|第 4 关|玩转「HF/魔搭/魔乐」平台|[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/maas/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/maas)、[视频](https://www.bilibili.com/video/BV1XxStYYEH1/)|  |
+|第 4 关|玩转「HF/魔搭/魔乐」平台|[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/maas/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L0/maas)、[视频](https://www.bilibili.com/video/BV1XxStYYEH1/)| [作业](docs/L0/mission4/readme.md) |
 
 
 ### 1.2. 基础关卡
