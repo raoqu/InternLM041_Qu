@@ -1,5 +1,7 @@
 # 任务1. 模型下载
 
+## huggingface 下载
+
 1. 注册hugging face（已有账号）
 2. 访问模型地址：https://huggingface.co/internlm/internlm2-chat-1_8b/tree/main
 ![](imgs/internlm_hfmodel.jpg)
@@ -15,6 +17,17 @@
 
 4. 本地下载模型（同第3项，本地环境先解决网络问题）
 ![alt text](imgs/image-1.png)
+
+## 魔搭下载
+
+1. 根据文档 `pip install modelscope`
+2. 通过 modelscope 命令下载指定文件
+```
+modelscope download --model 'Shanghai_AI_Laboratory/internlm2_5-7b-chat' tokenizer.json config.json model.safetensors.index.json --local_dir ms_demo
+```
+
+![](imgs/image-12.png)
+
 
 # 任务2. 模型上传
 
@@ -40,13 +53,27 @@ git push
 
 ## 2. 魔搭上传
 
-1. 根据文档在开发机中创建环境
-![](imgs/image-9.png)
+1. 创建模型
+![](imgs/image-13.png)
+
+2. git clone 到本地，添加已下载的 config.json，git添加并提交
+```
+git clone https://www.modelscope.cn/iwannaido/internlm2_5-7b-chat.git
+cd internlm2_5-7b-chat
+cp ../InternLM041_Qu/docs/L0/mission4/internlm2_5-7b/config.json .
+git add .
+git commit -m "add config.json"
+git push
+```
+
+3. 检查上传结果
+![](imgs/image-14.png)
+
 
 # 任务3. Space上传
 
 1. 在inter_cobuild项目实践过程中，`pip install huggingface_hub`
-2. hugingface-cli loign
+2. hugingface-cli login
 
 ![](imgs/image-5.png)
 
