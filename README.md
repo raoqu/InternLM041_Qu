@@ -23,7 +23,7 @@
 
 ||关卡名称|资料|作业|
 |:-----|:----|:----|:-----|
-|第 1 关| 书生大模型全链路开源体系 |[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/ToolChain)、[视频](https://www.bilibili.com/video/BV1CkSUYGE1v/)|  |
+|第 1 关| 书生大模型全链路开源体系 |[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/ToolChain)、[视频](https://www.bilibili.com/video/BV1CkSUYGE1v/)| [作业](docs/L1/mission1/readme.md) |
 |第 2 关| 玩转书生「多模态对话」和「AI搜索」产品 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/InternIntro/tasks.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/InternIntro)、[视频](https://www.bilibili.com/video/BV1ExDQYyEAA)|  |
 |第 3 关| 浦语提示词工程实践 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/Prompt/tasks.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/Prompt)、[视频](https://www.bilibili.com/video/BV1tjS7YfEWJ/)|  |
 |第 4 关| InternLM + LlamaIndex RAG 实践|[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/LlamaIndex/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/LlamaIndex)、[视频](https://www.bilibili.com/video/BV1YzDJY1E2i/)|  |
