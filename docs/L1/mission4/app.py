@@ -20,14 +20,14 @@ llm =OpenAILike(model=model, api_base=api_base_url, api_key=api_key, is_chat_mod
 
 
 
-st.set_page_config(page_title="llama_index_demo", page_icon="🦜🔗")
-st.title("llama_index_demo")
+st.set_page_config(page_title="InternLM + LlamaIndex RAG 实践", page_icon="🦜🔗")
+st.title("InternLM + LlamaIndex RAG 实践")
 
 # 初始化模型
 @st.cache_resource
 def init_models():
     embed_model = HuggingFaceEmbedding(
-        model_name="/root/model/sentence-transformer"
+        model_name="./sentence-transformer"
     )
     Settings.embed_model = embed_model
 

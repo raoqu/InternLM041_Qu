@@ -25,6 +25,19 @@ ssh -p 40805 root@ssh.intern-ai.org.cn -CNg -L 8501:127.0.0.1:8501 -o StrictHost
 
 ![](imgs/image-4.png)
 
-# Streamlit + LlamaIndex + 浦语API Space部署
+# 任务要求3: 部署到 Space
 
-https://huggingface.co/spaces/raoqu/internlm2_rag/tree/main
+Huggingface Space 地址：https://huggingface.co/spaces/raoqu/internlm2_rag
+
+1. 创建 Huggingface Space
+
+2. 修改app.py，添加git依赖 
+```
+git submodule add https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 sentence-transformer
+```
+
+3. git 部署到 [Huggingface Space](https://huggingface.co/spaces/raoqu/internlm2_rag)
+
+运行截图：
+
+![](imgs/image-6.png)
