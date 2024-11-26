@@ -21,7 +21,7 @@ ssh -p 40805 root@ssh.intern-ai.org.cn -CNg -L 8501:127.0.0.1:8501 -o StrictHost
 
 ![](imgs/image-2.png)
 
-## 任务要求2：使用本地InternLM2-Chat-1.8B模型实现RAG
+# 任务要求2：使用本地InternLM2-Chat-1.8B模型实现RAG
 
 ![](imgs/image-4.png)
 
