@@ -23,6 +23,8 @@ ssh -p 40805 root@ssh.intern-ai.org.cn -CNg -L 8501:127.0.0.1:8501 -o StrictHost
 
 # 任务要求2：使用本地InternLM2-Chat-1.8B模型实现RAG
 
+由于在10% A100上进行本地模型推理会出现GPU显存溢出，因此选择在本机（MacOS）上完成：
+
 ![](imgs/image-4.png)
 
 # 任务要求3: 部署到 Space
