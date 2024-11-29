@@ -28,7 +28,7 @@
 |第 3 关| 浦语提示词工程实践 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/Prompt/tasks.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/Prompt)、[视频](https://www.bilibili.com/video/BV1tjS7YfEWJ/)| [作业](docs/L1/mission3/readme.md) |
 |第 4 关| InternLM + LlamaIndex RAG 实践|[任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/LlamaIndex/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/LlamaIndex)、[视频](https://www.bilibili.com/video/BV1YzDJY1E2i/)| [作业](docs/L1/mission4/readme.md) |
 |第 5 关| XTuner 微调个人小助手认知 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/XTuner/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/XTuner)、[视频](https://www.bilibili.com/video/BV1G9SJYGEtD)| [作业](docs/L1/mission5/readme.md) |
-|第 6 关| OpenCompass 评测书生大模型实践 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/Evaluation/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/Evaluation/)、[视频](https://www.bilibili.com/video/BV1dtD4YKENj)|  |
+|第 6 关| OpenCompass 评测书生大模型实践 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/Evaluation/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L1/Evaluation/)、[视频](https://www.bilibili.com/video/BV1dtD4YKENj)| [作业](docs/L1/mission6/readme.md) |
 
 
 
