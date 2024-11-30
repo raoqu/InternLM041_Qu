@@ -88,13 +88,16 @@ ssh -p 49895 root@ssh.intern-ai.org.cn -CNg -L 8501:127.0.0.1:8501 -o StrictHost
 git clone https://huggingface.co/raoqu/Qu_finetuned_internlm2_5-7b-chat
 ```
 3. 将 work_dirs/assistTuner/merged 目录下的文件通过git添加到项目中
+
+模型文件很大，因此git lfs是必需要提前安装的
+
 ```bash
 # 需要提前安装git lfs
 git add .
 git commit -m "Add model files"
 git push
 ```
-由于模型文件太大，目前只上传了其他非bin文件
+
 ```
 (xtuner-env) root@intern-studio-41605128:~/finetune/work_dirs/assistTuner/merged# ls -lhSr
 total 15G
@@ -123,7 +126,7 @@ total 15G
 
 ## 2. 部署应用到 HuggingFace
 
-注：由于免费的space硬件所限，以及模型文件未上传完整，Space无法实际运行
+注：由于免费的space硬件所限，Space无法实际运行
 
 1. 在Huggingface 上创建Space: [QuAssistant](https://huggingface.co/spaces/raoqu/QuAssistant)
 2. git clone 到本地
