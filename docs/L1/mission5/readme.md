@@ -87,15 +87,31 @@ ssh -p 49895 root@ssh.intern-ai.org.cn -CNg -L 8501:127.0.0.1:8501 -o StrictHost
 ```bash
 git clone https://huggingface.co/raoqu/Qu_finetuned_internlm2_5-7b-chat
 ```
-3. 将 work_dirs/assistTuner/merged 目录下的文件通过git添加到项目中
+3. 将 work_dirs/assistTuner/merged 目录下的文件拉回本地，再通过git添加到项目中
 
-模型文件很大，因此git lfs是必需要提前安装的
+先在开发机上打包压缩
+```shell
+cd ~/finetune/work_dirs/assistTuner/merged
+zip merged.zip -0 -r merged
+```
+
+然后拉回本地（MacOS）
+```
+scp -P 49895 root@intern-studio-41605128:/root/finetune/work_dirs/assistTuner/merged.zip .
+unzip merged.zip
+mv merged/* .
+rm -rf merged
+```
+
+模型文件很大，因此git lfs是必需要提前安装
 
 ```bash
 # 需要提前安装git lfs
 git add .
 git commit -m "Add model files"
 git push
+# 由于bin文件很大，实际push过程我是单独针对每个文件push的，例如：
+# git add pytorch_model-00008-of-00008.bin && git commit -m "Add bin file" && git push
 ```
 
 ```
