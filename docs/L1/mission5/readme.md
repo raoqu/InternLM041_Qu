@@ -165,3 +165,4 @@ transformers==4.39.0
 6. git 提交并上传到 huggingface
 ![](imgs/image-32.png)
 
+![](imgs/hf-assistant.png)
