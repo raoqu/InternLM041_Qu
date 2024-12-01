@@ -17,7 +17,7 @@ pip install class_registry==2.1.2
 pip install datasets==3.1.0
 ```
 
-### 1.2 代码克隆，安装langent pip包
+### 1.2 代码克隆，安装lagent pip包
 
 克隆lagent相关代码（指定版本）并从源码安装pip包
 
@@ -49,7 +49,7 @@ pip install griffe==0.48.0
 2. 修改目录`lagent/lagent/actions`下的代码 [__init__.py](actions/__init__.py) 注册插件
 ![](imgs/actions-register.png)
 
-### 1.4 创建langent应用源码并执行
+### 1.4 创建lagent应用源码并执行
 
 1. 在目录`lagent/examples`下创建 [agent_api_demo.py](examples/agent_api_demo.py)
 
