@@ -38,7 +38,7 @@
 |:-----|:----|:----|:-----|
 |第 1 关| 探索书生大模型能力边界 | [任务]|  |
 |第 2 关| Lagent：从零搭建你的 Multi-Agent | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L2/Agent/task.md)、[文档](https://github.com/InternLM/Tutorial/tree/camp4/docs/L2/Agent)、[视频](https://www.bilibili.com/video/BV19RzcYaEFy)| [作业](docs/L2/mission2/readme.md) |
-|第 3 关| LMDeploy 量化部署进阶实践 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L2/LMDeploy/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L2/LMDeploy)、[视频](https://www.bilibili.com/video/BV18aUHY3EEG/)|  |
+|第 3 关| LMDeploy 量化部署进阶实践 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L2/LMDeploy/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L2/LMDeploy)、[视频](https://www.bilibili.com/video/BV18aUHY3EEG/)| [作业](docs/L2/mission3/readme.md) |
 |第 4 关| InternVL 多模态模型部署微调实践 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/docs/L2/InternVL/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/docs/L2/InternVL)、[视频](https://www.bilibili.com/video/BV1nESCYWEnN)|  |
 |第 5 关| 茴香豆：企业级知识库问答工具 | [任务]、[文档]、[视频]|  |
 |第 6 关| MindSearch深度解析及实践 | [任务]、[文档] |  |
