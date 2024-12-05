@@ -65,7 +65,7 @@ lmdeploy lite auto_awq \
 
 检查量化生成的模型结果，位于路径 `models/internlm2_5-1_8b-chat-w4a16-4bit` 中
 
-#### 1.3.2 W4A16量化模型的部署
+#### 1.3.2 W4A16模型量化+KV cache量化部署
 
 1. 验证量化模型的使用
 ```shell
@@ -85,7 +85,7 @@ lmdeploy serve api_server  models/internlm2_5-1_8b-chat-w4a16-4bit/ \
     --server-port 23333 \
     --tp 1
 ```
-参数中指定了模型的AWQ量化方式，采用4位量化，并且KV cache指定为使用40%余下显存
+参数中指定了模型的AWQ量化方式，采用4位量化，KV cache指定为使用40%余下显存
 ![](imgs/api-server.png)
 
 观察GPU显存占用情况：1.8B 模型 4位量化后理论权重占用为 0.9GB，KV cache 占用余下显存的 40%，即 (40-0.9)*40% = 15.6GB，总计 16.5GB。符合预期
@@ -120,5 +120,50 @@ ssh -p 36089 root@ssh.intern-ai.org.cn -CNg -L 6006:127.0.0.1:6006 -o StrictHost
 ```
 ![](imgs/gradio-chat.png)
 
+### 1.4 API 开发
+
+通过应用lmdeploy部署的模型API `http://0.0.0.0:2333` ，可以将该API endpoint当作一个通用的类OpenAI接口调用
+
+1. 创建应用代码 [internlm2_5.py](code/internlm2_5.py)
+![](imgs/dev-code.png)
+
+2. 执行应用代码
+```shell
+python internlm2_5.py
+```
+![](imgs/dev.png)
+
 ## 2. Function Call 实践
 
+在大模型问答中支持数学加法与乘法
+
+1. 创建python文件 [internlm2_5_func.py](code/internlm2_5_func.py)
+
+![](imgs/python_func.png)
+
+2. 在执行脚本前，先通过lmdeploy 以 API server的方式启动模型
+```shell
+conda activate lmdeploy
+# 复用先前量化的模型
+lmdeploy serve api_server  models/internlm2_5-1_8b-chat-w4a16-4bit/ \
+    --model-format awq \
+    --quant-policy 4 \
+    --cache-max-entry-count 0.4 \
+    --server-name 0.0.0.0 \ 
+    --server-port 23333  \
+    --tp 1
+```
+
+3. 执行包含function call的 python代码
+```
+python internlm2_5_func.py
+```
+
+![](imgs/funciton_call.png)
+
+在输出结果中可以观察到，在执行代码中`Compute (3+5)*2`的提问中，执行了两次 tool_calls：
+> ChatCompletionMessageToolCall(id='0', function=Function(arguments='{"a": 3, "b": 5}', name='add'), type='function')
+
+和
+
+> ChatCompletionMessageToolCall(id='1', function=Function(arguments='{"a": 8, "b": 2}', name='mul'), type='function')
