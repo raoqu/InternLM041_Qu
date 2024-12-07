@@ -142,3 +142,58 @@ git push
 ![](imgs/hf-success.png)
 
 # 2. 部署Streamlit版本到Huggingface
+
+## 2.1 方案分析
+gradio版本与steramlit版本仅仅是前端代码差异，而后端服务本身没有差异，因此只需要将已经部署的gradio版本Duplicate到新的Space，然后用Streamlit版本的前端python代码进行覆盖
+
+同时，Github codespace中部署过gradio版本的前端应用，但是是后端和前端是分别启动的。而官方Huggingface Space应用中，`app.py`实际上是gradio前端版本基础上，在代码中通过系统调用自动完成了后端服务的启动过程。因此依葫芦画瓢，对steramlit前端应用修改相应代码即可。
+
+## 2.2 着手实践
+
+基于Streamlit模板创建一个[新的space](https://huggingface.co/spaces/raoqu/MindSearchSl)
+![](imgs/streamlit-space.png)
+
+添加秘钥配置
+![](imgs/streamlit-keys.png)
+
+克隆代码到本地，复制原有的MindSearch应用代码，基于steramlit demo基础之上进行修改
+```
+conda activate ai
+git clone https://huggingface.co/spaces/raoqu/MindSearchSl
+git clone git@github.com:InternLM/MindSearch.git InternlmMindSearch
+cd MindSearchStreamlit
+cp -f ../InternlmMindSearch/frontend/mindsearch_streamlit.py ./app.py
+cp -rf ../MindSearch/mindsearch .
+cp -f ../MindSearch/requirements.txt .
+find . -name "__pycache__" -type d|xargs rm -rf
+git add .
+export SILICON_API_KEY='...'
+export GOOGLE_SERPER_API_KEY='...'
+export WEB_SEARCH_API_KEY='...'
+```
+
+修改 `requirements.txt`，添加对 `streamlit` 的依赖
+```
+pip install -r requirements.txt
+```
+
+打开 [app.py](code/app.py)修改代码，优先启动后端服务（参照app.py）
+![](imgs/streamlit-code.png)
+
+```
+streamlit run app.py
+```
+![](imgs/streamlit-run.png)
+
+提交代码
+```
+git add app.py
+git commit -m "提交"
+git push
+```
+
+部署成功后的 Huggingface Space
+![](imgs/streamlit-hf.png)
+
+可以看到MindSearch给出了非常有效的回答
+![](imgs/hf-response.png)
